@@ -1,0 +1,8 @@
+<h1>Бронь автосервиса</h1>
+<ul>
+  <% @reservations.each do |reservation| %>
+    <li>
+      <%= reservation.data.strftime("%Y-%m-%d %H:%M") %> - <%= reservation.client.name %>
+    </li>
+  <% end %>
+</ul>

@@ -1,3 +1,3 @@
 class Reservation < ApplicationRecord
-    belong_to :client
+    belongs_to :client
 end
